@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/dba0359cef.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
@@ -20,16 +22,21 @@
         font-size: 25px;}
         h3 {color: #BB9457;
         font-size: 20px;}
+        h4 {color: #BB9457;
+        font-size: 20px;
+        }
     </style>
 
 </head>
-<header>
-    <nav>
-      <ul>
-        <li><a href="./Index.html"> <b>Inicio</b></a></li>
-        <li> <a href="./Pizzas.html"> <b>Nuestras pizzas</b></a></li>
-        <li><a href="./Sucursales.html"> <b>Sucursales</b></a></li>
-        <li><a href="./Contacto.html"><b>Contacto</b></a></li>
+<header> 
+  <input type="checkbox" id="btn-menu">
+  <label for="btn-menu"> <i class="fa-solid fa-bars"></i></label>
+    <nav class="menu">
+       <ul class="lista-links">
+        <li><a class="link-item" href="./Index.html"> <b>Inicio</b></a></li>
+        <li> <a class="link-item" href="./Pizzas.html"> <b>Nuestras pizzas</b></a></li>
+        <li><a class="link-item" href="./Sucursales.html"> <b>Sucursales</b></a></li>
+        <li><a class="link-item" href="./Contacto.html"><b>Contacto</b></a></li>
       </ul>
     </nav>
 </header> 
@@ -56,7 +63,7 @@
 </body>
 <footer>
     <div>
-    <h3> <small>Todos los derechos reservados a Micaela Sol Percara &#x24C2 </small> </h3> 
+    <h4> <small>Todos los derechos reservados a Micaela Sol Percara &#x24C2 </small> </h4> 
   </div>
 </footer>
 </html>

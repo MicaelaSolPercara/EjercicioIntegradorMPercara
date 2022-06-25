@@ -20,65 +20,71 @@
         font-size: 70px;}
         h2{color: #BB9457;
         font-size: 25px;}
-        h3 {color: #BB9457;
+        h3 {color: #111110;
         font-size: 20px;}
+        h4 {color: #BB9457;
+        font-size: 20px;
+        }
     </style>
 </head>
-<header>
-    <nav>
-      <ul>
-        <li><a href="./Index.html"> <b>Inicio</b></a></li>
-        <li> <a href="./Pizzas.html"> <b>Nuestras pizzas</b></a></li>
-        <li><a href="./Sucursales.html"> <b>Sucursales</b></a></li>
-        <li><a href="./Contacto.html"><b>Contacto</b></a></li>
-      </ul>
-    </nav>
-<body>
-</header> 
+<header> 
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"> <i class="fa-solid fa-bars"></i></label>
+      <nav class="menu">
+         <ul class="lista-links">
+          <li><a class="link-item" href="./Index.html"> <b>Inicio</b></a></li>
+          <li> <a class="link-item" href="./Pizzas.html"> <b>Nuestras pizzas</b></a></li>
+          <li><a class="link-item" href="./Sucursales.html"> <b>Sucursales</b></a></li>
+          <li><a class="link-item" href="./Contacto.html"><b>Contacto</b></a></li>
+        </ul>
+      </nav>
+  </header> 
+
+
 <section id="banner">
     <h1 align="center"> PIZZERCA</h1>
     <h2 align="center"> <i> Las mejores pizzas, cerca de tu casa</i></h2>
  </section>
-
-<main>
+  <main>
     <br>
-    <h2><u>Nuestras pizzas</u> <i class="fa-solid fa-pizza-slice"></i></h2> 
-   <section class="containerpizza">
-        <span class="pizza" id="pizza1">
-         <h2 id="pPizza1">Muzzarella <br> <small> Queso mozzarella, salsa de tomate y finas hierbas de nuestra huerta</small> </h2>
-         <img src="./assets/Imagenes/Muzzarella.jpg"  width="100%" height="100%" alt="">
-        </span>
+    <h3 id="nuestrasPizzas"><u>Nuestras pizzas</u> <i class="fa-solid fa-pizza-slice"></i></h3>
+    <br> 
+    <div class="contenedorpizza">
         
-       <span class="pizza" id="pizza2">
-           <h2 id="pPizza2"> Cuatro Quesos <br> <small>Queso fontina, queso parmesano, queso gorgonzola y queso mozzarella</small></h2>
-           <img src="./assets/Imagenes/Cuatro quesos.jpg"  width="100%" height="100%" alt="">
-        </span>
-      
-       <span class="pizza" id="pizza3">
-           <h2 id="pPizza3"> Berenjena <br> <small>Queso mozzarella, salsa de tomate, finas rodajas de berenjena y tomate natural orgánico</small></h2>
-           <img src="./assets/Imagenes/Berenjena.jpg" width="100%" height="100%" alt=""> 
-       </span>
-      
-       <span class="pizza" id="pizza4">
-           <h2>Calabresa <br> <small>Queso mozzarella, salsa de tomate y rodajas de salame</small></h2>
-           <img src="./assets/Imagenes/Calabresa.jpg"  width="100%" height="100%" alt="">
-       </span>
-      
-       <span class="pizza" id="pizza5">
-           <h2>Pizzetas<br><small>Gusto a elección</nav></nav></small></h2>
-           <img src="./assets/Imagenes/Minipizzas.jpg"  width="100%" height="100%" alt="">
-       </span>
-      
-       <span class="pizza" id="pizza6">
-           <h2>Pizza dulce<br><small>Salsa de chocolate, frutas de estación, bombones de dulce de leche y chocolate</small></h2>
-           <img src="./assets/Imagenes/Pizza dulce.jpg"  width="100%" height="100%" alt="">
-        </span>
-    </section>
+        <div class="pizza" id="pizza1">
+         <h3 id="pPizza1">Muzzarella <br> <small> Queso mozzarella, salsa de tomate y finas hierbas de nuestra huerta</small> </h3>
+         <img src="./assets/Imagenes/Muzzarella.jpg"  width="100%"  alt="">
+        </div>
 
-</main>
+        <div class="pizza" id="pizza2">
+           <h3 id="pPizza2"> Cuatro Quesos <br> <small>Queso fontina, queso parmesano, queso gorgonzola y queso mozzarella</small></h3>
+           <img src="./assets/Imagenes/Cuatro quesos.jpg"  width="100%" alt="">
+        </div>
+      
+        <div class="pizza" id="pizza3">
+           <h3 id="pPizza3"> Berenjena <br> <small>Queso mozzarella, salsa de tomate y berenjena</small></h3>
+           <img src="./assets/Imagenes/Berenjena.jpg" width="100%"  alt=""> 
+        </div>
+      
+        <div class="pizza" id="pizza4">
+           <h3>Calabresa <br> <small>Queso mozzarella, salsa de tomate y rodajas de salame</small></h3>
+           <img src="./assets/Imagenes/Calabresa.jpg"  width="100%"  alt="">
+       </div>
+      
+       <div class="pizza" id="pizza5">
+           <h3>Pizzetas<br><small>Gusto a elección</nav></nav></small></h3>
+           <img src="./assets/Imagenes/Minipizzas.jpg"  width="100%" alt="">
+       </div>
     
+    </div>
+
+
+
+</main>  
 </body>
 <footer>
-    <small>Todos los derechos reservados a Micaela Sol Percara &#x24C2</small>
+    <div>
+    <h4> <small>Todos los derechos reservados a Micaela Sol Percara &#x24C2 </small> </h4> 
+  </div>
 </footer>
 </html>

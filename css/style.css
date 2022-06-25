@@ -1,17 +1,117 @@
-header{background-color: #000000e7;
-padding-top: 5px;
-padding-bottom: 5px;}
 
-body{background-color: #BB9457;}
+
+header {background-color: #000000e7;
+display: flex;
+justify-content:space-between;
+height: 50px;
+}
+
+
+#btn-menu {
+    display: none;
+    
+}
+
+header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    height: 45px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-top: 2%;
+    column-gap: 10px;    
+}
+
+.menu a:hover {
+    background: #2C3E50;
+}
+
+.menu a i {
+    margin-left: 10px;
+}
+
+.menu ul li:hover ul {
+    transition: all 0.3s ease;
+    display: block;
+    position: absolute;
+  }
+.menuDesplegable {
+    display: none;
+}  
+
+
+  @media (max-width: 768px) {
+
+    #btn-menu{
+    width: 50px;
+    height: 50px;
+    }
+    
+
+    header label {
+      display: block;
+      padding-top: 5px;
+      padding-right: 16px;
+      transition: all 0.4s ease;
+      margin-left: 5px;
+      background-color: #444343d2; 
+    }
+
+    .menu {
+        position: absolute;
+        top: 64px;
+        left: 8px;
+        width: 70%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+      }
+
+    .menu ul {
+        flex-direction: column;
+        //display: block;  
+        background-color: #000000e7; 
+    }
+
+    .menu ul li:hover ul {
+        display: none;
+        position: static;
+    }
+
+    .menu a i {
+        position: absolute;
+        right: 16px;
+        line-height: 32px;
+        margin-left: 5px;
+    }
+
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%);
+    }
+
+    
+}
+
+body{background-color: #BB9457;
+margin: 0%;
+}
 
 footer {background-color: #000000;
 width: 100%;
 position:fixed;
 bottom: 0;
-margin: 0px;}
+margin: 0px;
+}
     
-a{color:#caab78d8;}
-a:hover {font-size: 20px;}
+a{color:#caab78d8;
+}
+
+a:hover {font-size: 20px;
+}
 
 .cajaindex {
     border-color: #6F1D1B;
@@ -22,7 +122,8 @@ a:hover {font-size: 20px;}
     margin-bottom: 10px;
     margin-left: 70px;
     margin-right: 70px;
-    padding: 5px;}
+    padding: 5px;
+}
 
     
    #banner {
@@ -31,7 +132,8 @@ a:hover {font-size: 20px;}
        background-image: url(https://cdn.pixabay.com/photo/2020/06/14/15/46/pizza-5298369_960_720.jpg);
        background-size: cover;
        background-repeat: no-repeat;
-       background-position: center;}
+       background-position: center;
+    }
 
     /*Transición del index*/ 
      .cajai1{
@@ -61,64 +163,77 @@ a:hover {font-size: 20px;}
     
      
 
-h1 {padding-top: 10px;}
+h1 {padding-top: 10px;
+}
 
 *{  font-family: 'Fjalla One', sans-serif;
     margin-bottom: 0px;
     margin-top: 0px;
-    box-sizing: border-box;}
-
-#containerpizza {display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-content: space-between;
-    align-items: stretch;
-    align-self: auto;
-
+    box-sizing: border-box;
 }
 
-.pizza {width: 450px;
-    height: 400px;
-    margin: 40px;
-    padding: 25px;
-    box-sizing: border-box;}
 
-#pizza1 {display: inline-block;
-    position: relative;}
-#pizza2 {display: inline-block;
-position: relative; }
-#pizza3 {display: inline-block;
-    position: relative; }
-#pizza4 {display: inline-block;
-    position: relative; }
-#pizza5 {display: inline-block;
-    position: relative; }
-#pizza6 {display: inline-block;
-    position: relative; }
 
+.contenedorpizza {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedorpizza {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        column-gap: 5px;
+        row-gap: 15px;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+
+    }
     
-.containerSucursales {width: 100%;
-    height: 100%;
-    margin: 40px;
+}
+
+.containerSucursales {
     padding: 25px;
-    position: relative;}
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline; 
+}
 
 
-.sucursal {position: relative;
-display:inline-block}
+.sucursal {
+   flex: auto;
+   align-self: center;
+}
 
-#form{font-size: medium ;
+.contenedorFormulario{
+   margin: 10px;
+   
+    position: relative;
+}
+
+#form {
+    font-size: medium;
     padding: 500px;
     margin: auto;
-    position: relative;
+    position:relative;
     text-align: justify;
     padding: 10px;
-    color: #6F1D1B;}
-.warnings{
+    color: #6F1D1B;
+}
+.warnings {
     width: 200px;
     text-align: center;
-    color: red;
-    
+    color: red;   
 }
  
